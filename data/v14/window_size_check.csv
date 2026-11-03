@@ -1,0 +1,10 @@
+check,value
+overall accuracy (%),71.66
+predictions that cross window-size groups (% of windows),0.07
+errors that cross window-size groups (% of errors),0.26
+window-size-only oracle: accuracy (%),24.76
+window-size-only oracle: macro-F1 (%),5.72
+group k=10 (7 classes): accuracy (%),86.72
+group k=10: accuracy when the group is given (%),86.73
+group k=20 (12 classes): accuracy (%),70.99
+group k=20: accuracy when the group is given (%),71.0

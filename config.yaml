@@ -1,0 +1,40 @@
+# IoMT-IDS configuration
+# Models: each variant folder holds m_window.json, m_context.json and fusion.json
+model_variants:
+  lite: models/lite           # v9b Lite-B (DEFAULT): depth 6, 150 trees | 22 MB | ~2 ms/window | same accuracy
+  full: models                # v9 Full: depth 8, 1000 trees | 209 MB | ~18 ms/window
+  tiny: models/tiny           # v9b Tiny (optional): depth 4, 80 trees | 5 MB | ~1.3 ms | -1.4 macro-F1
+active_model: lite            # lite | full | tiny. If its files are missing, the first available variant is used
+demo_stream: data/demo_stream.parquet
+
+# Artifact guard. IAT in CICIoMT2024 = capture Unix timestamp / window size (research log s.27):
+# alone it gives 98.9% accuracy. Number/Weight = window-size bookkeeping (removing them is harmless).
+artifact_features: [IAT, Number, Weight]
+redundant_features: [Drate, Srate, LLC]
+
+# Context buffer
+context_k: 10                 # pichhli kitni windows (current window included)
+
+# Alert manager
+smoothing_m: 3                # alarm when at least m of the last n windows are attacks
+smoothing_n: 5
+min_confidence: 0.0           # ignore attack predictions below this confidence
+
+# Window is flagged as attack only if P(attack) = 1 - P(Benign) >= threshold.
+# Chosen on VALIDATION streams (v10e P4, 95% benign): ~16x fewer false alarms, detection 99.9 -> 96.5%.
+# null = old argmax rule (flag whenever the top class is an attack).
+attack_threshold:
+  lite: 0.95
+  full: 0.98
+  tiny: 0.95                  # not separately validated
+
+severity:                     # attack family -> severity
+  DDoS: HIGH
+  DoS: HIGH
+  MQTT: HIGH
+  ARP_Spoofing: HIGH
+  Recon: MEDIUM
+  default: MEDIUM
+
+# Inference
+nthreads: 1                   # edge-like single core

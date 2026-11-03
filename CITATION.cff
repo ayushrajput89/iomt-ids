@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "IoMT-IDS: Leakage-Free and Context-Aware Intrusion Detection for IoMT Networks"
+authors:
+  - family-names: Amin
+    given-names: Ruhul
+  - family-names: Rajput
+    given-names: Ayush
+  - family-names: Jain
+    given-names: Namanshi
+repository-code: "https://github.com/ayushrajput89/iomt-ids"
+license: MIT
+version: 0.4.2
+date-released: 2026-11-02

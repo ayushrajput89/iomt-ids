@@ -1,0 +1,25 @@
+model,rule,t,t_arp,benign_share,L,FA_per_1000_benign,event_precision_%,window_precision_%,detected_%
+Lite-B,argmax (no threshold),,,0.95,25,5.858,25.933,49.668,99.75
+Lite-B,argmax (no threshold),,,0.95,100,5.726,8.227,55.185,100.0
+Lite-B,argmax (no threshold),,,0.5,25,5.64,81.999,90.092,99.699
+Lite-B,argmax (no threshold),,,0.5,100,4.821,59.432,95.271,100.0
+Lite-B,global t,0.95,,0.95,25,0.205,90.418,91.424,95.75
+Lite-B,global t,0.95,,0.95,100,0.534,53.881,96.343,97.196
+Lite-B,global t,0.95,,0.5,25,0.389,98.377,95.701,96.243
+Lite-B,global t,0.95,,0.5,100,0.199,97.455,98.912,97.59
+Lite-B,global t + ARP t,0.95,,0.95,25,0.205,90.418,91.424,95.75
+Lite-B,global t + ARP t,0.95,,0.95,100,0.534,53.881,96.343,97.196
+Lite-B,global t + ARP t,0.95,,0.5,25,0.389,98.377,95.701,96.243
+Lite-B,global t + ARP t,0.95,,0.5,100,0.199,97.455,98.912,97.59
+Full,argmax (no threshold),,,0.95,25,5.189,28.444,50.847,99.5
+Full,argmax (no threshold),,,0.95,100,5.024,9.953,54.443,100.0
+Full,argmax (no threshold),,,0.5,25,5.071,83.939,90.801,99.224
+Full,argmax (no threshold),,,0.5,100,4.412,62.696,95.141,100.0
+Full,global t,0.98,,0.95,25,0.516,79.661,82.372,96.25
+Full,global t,0.98,,0.95,100,0.338,66.842,86.298,98.131
+Full,global t,0.98,,0.5,25,0.519,98.413,95.291,96.294
+Full,global t,0.98,,0.5,100,0.388,95.991,98.609,98.293
+Full,global t + ARP t,0.98,,0.95,25,0.516,79.661,82.372,96.25
+Full,global t + ARP t,0.98,,0.95,100,0.338,66.842,86.298,98.131
+Full,global t + ARP t,0.98,,0.5,25,0.519,98.413,95.291,96.294
+Full,global t + ARP t,0.98,,0.5,100,0.388,95.991,98.609,98.293

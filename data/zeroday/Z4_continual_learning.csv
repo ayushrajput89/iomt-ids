@@ -1,0 +1,113 @@
+scenario,strategy,n_per_class,old_macro_f1,new_macro_f1,all19_macro_f1,train_sec,forgetting_pts
+ARP spoofing,0 before learning,0,67.22,0.0,63.68,57.26,0.0
+ARP spoofing,"A fine-tune, no replay",10,4.97,10.03,5.23,0.34,62.25
+ARP spoofing,B fine-tune + replay,10,65.77,11.95,62.94,8.7,1.44
+ARP spoofing,C retrain on replay buffer,10,66.19,7.49,63.1,9.68,1.02
+ARP spoofing,"A fine-tune, no replay",50,0.0,9.57,0.5,0.32,67.22
+ARP spoofing,B fine-tune + replay,50,64.77,32.09,63.05,9.21,2.45
+ARP spoofing,C retrain on replay buffer,50,66.29,31.52,64.46,13.09,0.92
+ARP spoofing,"A fine-tune, no replay",200,0.0,9.57,0.5,0.48,67.22
+ARP spoofing,B fine-tune + replay,200,66.36,40.89,65.02,9.33,0.86
+ARP spoofing,C retrain on replay buffer,200,66.54,39.88,65.14,13.55,0.67
+ARP spoofing,"A fine-tune, no replay",1000,0.0,9.57,0.5,0.92,67.22
+ARP spoofing,B fine-tune + replay,1000,66.33,61.76,66.09,9.74,0.88
+ARP spoofing,C retrain on replay buffer,1000,67.3,65.72,67.22,14.78,-0.09
+ARP spoofing,D full retrain (upper bound),1000,68.18,67.48,68.14,72.88,-0.96
+Reconnaissance (4),0 before learning,0,70.05,0.0,55.3,70.82,0.0
+Reconnaissance (4),"A fine-tune, no replay",10,36.5,22.59,33.57,0.36,33.54
+Reconnaissance (4),B fine-tune + replay,10,68.9,43.76,63.6,9.17,1.15
+Reconnaissance (4),C retrain on replay buffer,10,71.95,34.66,64.1,13.7,-1.9
+Reconnaissance (4),"A fine-tune, no replay",50,33.03,21.03,30.51,0.55,37.01
+Reconnaissance (4),B fine-tune + replay,50,69.83,49.0,65.44,8.25,0.22
+Reconnaissance (4),C retrain on replay buffer,50,72.1,49.45,67.33,9.77,-2.05
+Reconnaissance (4),"A fine-tune, no replay",200,26.98,18.02,25.09,1.08,43.06
+Reconnaissance (4),B fine-tune + replay,200,68.55,45.74,63.75,9.82,1.49
+Reconnaissance (4),C retrain on replay buffer,200,71.99,48.79,67.11,13.29,-1.94
+Reconnaissance (4),"A fine-tune, no replay",1000,21.43,17.45,20.59,1.75,48.62
+Reconnaissance (4),B fine-tune + replay,1000,69.73,43.56,64.22,7.48,0.32
+Reconnaissance (4),C retrain on replay buffer,1000,72.36,48.67,67.38,19.92,-2.32
+Reconnaissance (4),D full retrain (upper bound),1000,73.63,49.42,68.53,73.46,-3.58
+MQTT attacks (5),0 before learning,0,59.59,0.0,43.9,43.43,0.0
+MQTT attacks (5),"A fine-tune, no replay",10,46.76,49.01,47.35,0.36,12.82
+MQTT attacks (5),B fine-tune + replay,10,61.16,60.56,61.0,4.11,-1.58
+MQTT attacks (5),C retrain on replay buffer,10,63.36,62.44,63.12,8.97,-3.78
+MQTT attacks (5),"A fine-tune, no replay",50,43.9,51.8,45.98,1.03,15.68
+MQTT attacks (5),B fine-tune + replay,50,62.76,67.59,64.03,5.44,-3.18
+MQTT attacks (5),C retrain on replay buffer,50,64.11,66.59,64.76,9.78,-4.52
+MQTT attacks (5),"A fine-tune, no replay",200,37.47,50.9,41.01,1.52,22.11
+MQTT attacks (5),B fine-tune + replay,200,63.3,70.95,65.32,8.9,-3.72
+MQTT attacks (5),C retrain on replay buffer,200,64.69,72.22,66.67,12.32,-5.11
+MQTT attacks (5),"A fine-tune, no replay",1000,52.59,62.37,55.17,2.89,6.99
+MQTT attacks (5),B fine-tune + replay,1000,63.98,71.67,66.0,10.52,-4.39
+MQTT attacks (5),C retrain on replay buffer,1000,66.22,73.3,68.09,15.15,-6.64
+MQTT attacks (5),D full retrain (upper bound),1000,66.85,74.0,68.73,44.42,-7.27
+MQTT malformed data,0 before learning,0,66.19,0.0,62.7,54.02,0.0
+MQTT malformed data,"A fine-tune, no replay",10,0.08,9.59,0.58,0.25,66.11
+MQTT malformed data,B fine-tune + replay,10,63.17,34.8,61.68,8.85,3.01
+MQTT malformed data,C retrain on replay buffer,10,65.33,18.39,62.86,11.49,0.86
+MQTT malformed data,"A fine-tune, no replay",50,0.0,9.58,0.5,0.3,66.19
+MQTT malformed data,B fine-tune + replay,50,63.97,69.53,64.26,5.42,2.22
+MQTT malformed data,C retrain on replay buffer,50,65.68,59.45,65.35,9.0,0.51
+MQTT malformed data,"A fine-tune, no replay",200,0.0,9.58,0.5,0.47,66.19
+MQTT malformed data,B fine-tune + replay,200,64.5,72.53,64.92,6.99,1.69
+MQTT malformed data,C retrain on replay buffer,200,66.31,74.99,66.77,12.61,-0.13
+MQTT malformed data,"A fine-tune, no replay",1000,0.0,9.58,0.5,0.85,66.19
+MQTT malformed data,B fine-tune + replay,1000,65.66,71.35,65.96,9.71,0.52
+MQTT malformed data,C retrain on replay buffer,1000,66.37,81.05,67.14,15.19,-0.18
+MQTT malformed data,D full retrain (upper bound),1000,67.29,83.67,68.15,71.62,-1.1
+ICMP floods (DoS+DDoS),0 before learning,0,65.9,0.0,58.96,53.72,0.0
+ICMP floods (DoS+DDoS),"A fine-tune, no replay",10,35.76,17.72,33.86,0.28,30.13
+ICMP floods (DoS+DDoS),B fine-tune + replay,10,66.29,61.34,65.76,6.35,-0.39
+ICMP floods (DoS+DDoS),C retrain on replay buffer,10,67.01,48.95,65.11,6.26,-1.11
+ICMP floods (DoS+DDoS),"A fine-tune, no replay",50,8.05,27.87,10.14,0.35,57.84
+ICMP floods (DoS+DDoS),B fine-tune + replay,50,66.01,57.88,65.15,7.67,-0.11
+ICMP floods (DoS+DDoS),C retrain on replay buffer,50,67.8,60.74,67.06,12.49,-1.91
+ICMP floods (DoS+DDoS),"A fine-tune, no replay",200,21.03,29.93,21.96,0.45,44.87
+ICMP floods (DoS+DDoS),B fine-tune + replay,200,65.44,61.16,64.99,8.88,0.46
+ICMP floods (DoS+DDoS),C retrain on replay buffer,200,68.0,60.69,67.23,13.99,-2.1
+ICMP floods (DoS+DDoS),"A fine-tune, no replay",1000,41.1,37.99,40.77,1.06,24.8
+ICMP floods (DoS+DDoS),B fine-tune + replay,1000,66.46,65.66,66.37,9.18,-0.56
+ICMP floods (DoS+DDoS),C retrain on replay buffer,1000,67.63,68.0,67.67,13.91,-1.73
+ICMP floods (DoS+DDoS),D full retrain (upper bound),1000,68.97,67.41,68.81,54.84,-3.07
+SYN floods (DoS+DDoS),0 before learning,0,63.58,0.0,56.89,49.59,0.0
+SYN floods (DoS+DDoS),"A fine-tune, no replay",10,22.24,17.49,21.74,1.18,41.34
+SYN floods (DoS+DDoS),B fine-tune + replay,10,62.85,61.31,62.69,4.85,0.73
+SYN floods (DoS+DDoS),C retrain on replay buffer,10,64.44,56.24,63.58,12.7,-0.86
+SYN floods (DoS+DDoS),"A fine-tune, no replay",50,39.93,26.25,38.49,0.37,23.65
+SYN floods (DoS+DDoS),B fine-tune + replay,50,63.38,70.38,64.12,8.49,0.2
+SYN floods (DoS+DDoS),C retrain on replay buffer,50,64.84,69.72,65.35,10.36,-1.25
+SYN floods (DoS+DDoS),"A fine-tune, no replay",200,45.74,36.6,44.77,0.69,17.85
+SYN floods (DoS+DDoS),B fine-tune + replay,200,64.19,83.37,66.2,9.2,-0.6
+SYN floods (DoS+DDoS),C retrain on replay buffer,200,65.44,84.31,67.42,13.42,-1.85
+SYN floods (DoS+DDoS),"A fine-tune, no replay",1000,39.41,33.82,38.82,1.4,24.18
+SYN floods (DoS+DDoS),B fine-tune + replay,1000,64.16,87.61,66.63,9.86,-0.58
+SYN floods (DoS+DDoS),C retrain on replay buffer,1000,65.5,87.4,67.8,15.57,-1.91
+SYN floods (DoS+DDoS),D full retrain (upper bound),1000,66.49,87.39,68.69,60.87,-2.91
+UDP floods (DoS+DDoS),0 before learning,0,66.49,0.0,59.49,80.08,0.0
+UDP floods (DoS+DDoS),"A fine-tune, no replay",10,60.58,31.59,57.53,0.28,5.91
+UDP floods (DoS+DDoS),B fine-tune + replay,10,65.74,53.91,64.49,7.9,0.75
+UDP floods (DoS+DDoS),C retrain on replay buffer,10,67.89,54.88,66.52,5.48,-1.4
+UDP floods (DoS+DDoS),"A fine-tune, no replay",50,50.14,25.99,47.6,0.33,16.35
+UDP floods (DoS+DDoS),B fine-tune + replay,50,65.78,55.69,64.72,7.16,0.71
+UDP floods (DoS+DDoS),C retrain on replay buffer,50,68.64,55.71,67.28,11.27,-2.15
+UDP floods (DoS+DDoS),"A fine-tune, no replay",200,57.24,31.94,54.57,0.5,9.26
+UDP floods (DoS+DDoS),B fine-tune + replay,200,66.05,58.16,65.22,8.99,0.44
+UDP floods (DoS+DDoS),C retrain on replay buffer,200,68.89,56.57,67.59,13.79,-2.39
+UDP floods (DoS+DDoS),"A fine-tune, no replay",1000,19.73,28.24,20.62,1.14,46.77
+UDP floods (DoS+DDoS),B fine-tune + replay,1000,65.91,58.44,65.13,9.56,0.58
+UDP floods (DoS+DDoS),C retrain on replay buffer,1000,68.91,57.99,67.76,15.24,-2.42
+UDP floods (DoS+DDoS),D full retrain (upper bound),1000,69.66,57.52,68.38,54.83,-3.17
+TCP floods (DoS+DDoS),0 before learning,0,65.82,0.0,58.9,54.58,0.0
+TCP floods (DoS+DDoS),"A fine-tune, no replay",10,37.87,20.61,36.05,0.27,27.96
+TCP floods (DoS+DDoS),B fine-tune + replay,10,66.06,63.12,65.75,4.94,-0.24
+TCP floods (DoS+DDoS),C retrain on replay buffer,10,67.89,62.11,67.28,10.47,-2.06
+TCP floods (DoS+DDoS),"A fine-tune, no replay",50,37.02,20.2,35.25,1.22,28.81
+TCP floods (DoS+DDoS),B fine-tune + replay,50,65.88,65.31,65.82,5.03,-0.05
+TCP floods (DoS+DDoS),C retrain on replay buffer,50,67.49,66.83,67.42,11.4,-1.66
+TCP floods (DoS+DDoS),"A fine-tune, no replay",200,33.71,19.8,32.25,0.48,32.11
+TCP floods (DoS+DDoS),B fine-tune + replay,200,65.94,65.22,65.87,8.86,-0.12
+TCP floods (DoS+DDoS),C retrain on replay buffer,200,67.7,62.99,67.2,13.68,-1.87
+TCP floods (DoS+DDoS),"A fine-tune, no replay",1000,37.95,23.54,36.43,1.09,27.88
+TCP floods (DoS+DDoS),B fine-tune + replay,1000,66.1,69.13,66.42,7.98,-0.28
+TCP floods (DoS+DDoS),C retrain on replay buffer,1000,67.82,70.12,68.06,14.3,-1.99
+TCP floods (DoS+DDoS),D full retrain (upper bound),1000,68.77,71.77,69.09,54.86,-2.95

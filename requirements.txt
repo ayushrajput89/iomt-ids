@@ -1,0 +1,9 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+xgboost>=2.0
+pyyaml
+streamlit>=1.37
+altair>=5
+pytest

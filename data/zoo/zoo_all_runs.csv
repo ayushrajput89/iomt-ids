@@ -1,0 +1,52 @@
+model,protocol,view,accuracy,macro_f1,weighted_f1,macro_precision,macro_recall,roc_auc_macro_ovr,train_s,infer_ms_per_1k,size_mb
+Logistic Regression,S static,window,59.21,50.58,55.61,57.02,64.09,97.42,80.43,0.77,0.01
+Gaussian Naive Bayes,S static,window,62.96,31.18,52.02,44.71,47.31,95.05,0.35,7.87,0.01
+Decision Tree,S static,window,71.07,63.8,72.2,64.65,71.69,90.43,9.01,0.14,4.95
+Random Forest,S static,window,73.17,67.23,74.02,69.79,74.83,98.34,54.8,11.87,212.41
+Extra Trees,S static,window,78.18,63.7,75.21,67.85,68.84,97.89,19.85,12.03,171.58
+LightGBM,S static,window,71.96,68.91,73.12,71.66,73.96,95.19,365.0,912.94,46.32
+XGBoost,S static,window,72.01,68.66,73.09,70.78,74.54,96.21,43.18,3.48,36.6
+MLP,S static,window,56.69,55.86,57.22,62.09,68.56,98.03,16.17,0.32,0.19
+1D-CNN (published),S static,window,54.64,55.17,54.3,61.17,68.11,97.63,12.23,0.79,0.3
+Logistic Regression,M stream L=10,window,64.17,50.33,65.26,55.12,58.47,96.83,72.2,0.79,0.01
+Logistic Regression,M stream L=100,window,64.11,49.92,65.01,54.74,58.24,96.87,72.2,0.8,0.01
+Logistic Regression,M stream L=10,window + context,59.96,47.95,62.41,49.79,52.42,92.61,106.41,1.67,0.02
+Logistic Regression,M stream L=100,window + context,69.88,57.71,71.19,61.63,64.0,96.17,106.41,1.55,0.02
+Gaussian Naive Bayes,M stream L=10,window,28.26,29.28,22.62,43.72,45.61,93.8,0.38,8.95,0.01
+Gaussian Naive Bayes,M stream L=100,window,28.95,28.99,24.11,43.4,45.63,93.79,0.38,8.39,0.01
+Gaussian Naive Bayes,M stream L=10,window + context,19.96,26.87,18.97,36.3,32.74,84.14,0.73,20.52,0.04
+Gaussian Naive Bayes,M stream L=100,window + context,31.26,36.33,27.88,47.76,50.17,94.39,0.73,21.28,0.04
+Decision Tree,M stream L=10,window,77.09,64.56,77.35,67.04,68.08,88.15,6.96,0.16,2.5
+Decision Tree,M stream L=100,window,78.59,65.71,78.7,68.44,68.89,88.65,6.96,0.13,2.5
+Decision Tree,M stream L=10,window + context,67.23,50.53,67.18,53.19,51.83,75.9,29.48,0.2,1.32
+Decision Tree,M stream L=100,window + context,82.64,68.74,81.79,72.33,69.97,85.88,29.48,0.14,1.32
+Random Forest,M stream L=10,window,80.69,67.43,80.18,71.21,69.6,97.68,46.8,12.55,161.0
+Random Forest,M stream L=100,window,82.0,68.54,81.46,72.36,70.34,97.93,46.8,17.09,161.0
+Random Forest,M stream L=10,window + context,75.37,58.14,73.5,64.65,57.57,96.28,101.68,22.47,137.14
+Random Forest,M stream L=100,window + context,85.8,73.31,84.66,79.03,73.35,97.18,101.68,9.78,137.14
+Extra Trees,M stream L=10,window,73.8,56.86,73.12,62.59,58.51,97.42,14.85,11.34,151.3
+Extra Trees,M stream L=100,window,74.97,56.84,74.12,62.97,58.65,97.61,14.85,10.41,151.3
+Extra Trees,M stream L=10,window + context,70.54,52.79,69.22,57.42,52.74,95.94,22.73,14.87,173.42
+Extra Trees,M stream L=100,window + context,77.83,62.61,77.12,68.55,64.83,97.89,22.73,11.36,173.42
+LightGBM,M stream L=10,window,79.71,65.76,79.36,69.59,67.13,94.47,260.97,990.28,45.69
+LightGBM,M stream L=100,window,81.7,67.37,81.27,71.1,68.52,94.95,260.97,985.37,45.69
+LightGBM,M stream L=10,window + context,80.14,65.42,78.89,70.68,66.02,95.1,487.22,826.87,32.43
+LightGBM,M stream L=100,window + context,86.64,74.26,85.82,78.51,74.84,96.03,487.22,807.98,32.43
+XGBoost,M stream L=10,window,79.24,66.04,79.17,69.61,68.03,95.7,40.12,4.97,33.2
+XGBoost,M stream L=100,window,80.96,67.17,80.82,70.51,69.02,96.07,40.12,3.95,33.2
+XGBoost,M stream L=10,window + context,80.03,65.62,78.91,70.47,66.55,95.47,72.99,31.01,22.39
+XGBoost,M stream L=100,window + context,86.43,73.94,85.65,78.14,74.57,95.86,72.99,27.07,22.39
+MLP,M stream L=10,window,68.49,56.5,70.05,61.78,62.53,97.62,9.61,0.29,0.19
+MLP,M stream L=100,window,69.92,56.75,71.24,62.35,62.56,97.74,9.61,0.29,0.19
+MLP,M stream L=10,window + context,65.47,53.38,67.08,55.67,57.5,95.59,14.89,0.53,0.27
+MLP,M stream L=100,window + context,73.39,60.8,74.03,65.85,67.32,96.82,14.89,0.55,0.27
+1D-CNN (published),M stream L=10,window,69.99,56.38,71.02,60.31,62.3,97.74,9.97,0.73,0.3
+1D-CNN (published),M stream L=100,window,71.63,56.94,72.41,60.62,62.61,97.86,9.97,0.72,0.3
+1D-CNN (published),M stream L=10,window + context,69.5,54.66,70.11,56.66,57.8,96.09,16.11,2.15,0.92
+1D-CNN (published),M stream L=100,window + context,76.68,62.48,76.88,67.46,67.25,97.52,16.11,2.09,0.92
+GRU (last 10 windows),M stream L=10,sequence (K=10),68.89,55.73,70.04,58.04,59.44,96.29,14.82,3.06,0.24
+GRU (last 10 windows),M stream L=100,sequence (K=10),76.62,63.33,77.04,67.83,68.07,97.55,14.82,2.91,0.24
+Transformer (last 10 windows),M stream L=10,sequence (K=10),69.78,56.58,70.77,59.22,60.23,95.73,39.56,4.23,0.36
+Transformer (last 10 windows),M stream L=100,sequence (K=10),77.89,64.44,77.96,69.49,68.73,96.94,39.56,4.31,0.36
+"Context ensemble (ours, w=0.2)",M stream L=10,window + context,80.52,66.24,79.38,71.14,67.14,95.84,111.32,31.7,55.59
+"Context ensemble (ours, w=0.2)",M stream L=100,window + context,86.62,74.21,85.82,78.37,74.82,96.24,111.32,31.06,55.59

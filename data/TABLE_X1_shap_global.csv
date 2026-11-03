@@ -1,0 +1,82 @@
+setting,feature,mean,std,rank
+All 42 features,IAT,22.29,0.66,1
+All 42 features,Rate,8.99,0.09,2
+All 42 features,Number,6.07,0.14,3
+All 42 features,rst_count,4.89,0.12,4
+All 42 features,Header_Length,4.43,0.17,5
+All 42 features,ICMP,4.43,0.14,5
+All 42 features,Min,4.4,0.17,7
+All 42 features,syn_count,3.64,0.11,8
+All 42 features,fin_count,3.57,0.07,9
+All 42 features,syn_flag_number,3.54,0.14,10
+All 42 features,Tot_size,2.87,0.57,11
+All 42 features,Weight,2.8,0.46,12
+All 42 features,fin_flag_number,2.45,0.11,13
+All 42 features,ack_flag_number,2.33,0.12,14
+All 42 features,ack_count,2.02,0.06,15
+All 42 features,Tot_sum,1.87,0.07,16
+All 42 features,Protocol_Type,1.85,0.22,17
+All 42 features,psh_flag_number,1.84,0.11,18
+All 42 features,Max,1.82,0.15,19
+All 42 features,Magnitue,1.72,0.12,20
+All 42 features,Variance,1.71,0.03,21
+All 42 features,TCP,1.59,0.22,22
+All 42 features,Covariance,1.38,0.1,23
+All 42 features,UDP,1.33,0.03,24
+All 42 features,rst_flag_number,1.27,0.06,25
+All 42 features,AVG,1.12,0.12,26
+All 42 features,Duration,1.04,0.05,27
+All 42 features,HTTPS,0.83,0.05,28
+All 42 features,ARP,0.71,0.07,29
+All 42 features,Radius,0.48,0.05,30
+All 42 features,Std,0.45,0.01,31
+All 42 features,IPv,0.16,0.04,32
+All 42 features,DNS,0.08,0.0,33
+All 42 features,HTTP,0.04,0.0,34
+All 42 features,SSH,0.01,0.0,35
+All 42 features,DHCP,0.0,0.0,39
+All 42 features,IGMP,0.0,0.0,39
+All 42 features,IRC,0.0,0.0,39
+All 42 features,SMTP,0.0,0.0,39
+All 42 features,Telnet,0.0,0.0,39
+All 42 features,cwr_flag_number,0.0,0.0,39
+All 42 features,ece_flag_number,0.0,0.0,39
+Shortcut-free 39,Rate,9.13,0.07,1
+Shortcut-free 39,Tot_sum,6.81,0.14,2
+Shortcut-free 39,Header_Length,6.26,0.13,3
+Shortcut-free 39,rst_count,6.19,0.29,4
+Shortcut-free 39,syn_count,5.98,0.17,5
+Shortcut-free 39,ICMP,5.51,0.19,6
+Shortcut-free 39,syn_flag_number,5.3,0.18,7
+Shortcut-free 39,Min,5.17,0.16,8
+Shortcut-free 39,fin_count,4.9,0.14,9
+Shortcut-free 39,ack_flag_number,4.1,0.04,10
+Shortcut-free 39,Tot_size,3.68,0.19,11
+Shortcut-free 39,TCP,3.53,0.15,12
+Shortcut-free 39,Variance,3.39,0.01,13
+Shortcut-free 39,Magnitue,3.33,0.26,14
+Shortcut-free 39,Protocol_Type,3.08,0.16,15
+Shortcut-free 39,ack_count,3.04,0.11,16
+Shortcut-free 39,UDP,3.01,0.05,17
+Shortcut-free 39,Max,2.69,0.07,18
+Shortcut-free 39,psh_flag_number,2.28,0.07,19
+Shortcut-free 39,AVG,1.99,0.18,20
+Shortcut-free 39,Duration,1.91,0.1,21
+Shortcut-free 39,fin_flag_number,1.76,0.11,22
+Shortcut-free 39,Covariance,1.61,0.06,23
+Shortcut-free 39,rst_flag_number,1.42,0.08,24
+Shortcut-free 39,HTTPS,1.28,0.03,25
+Shortcut-free 39,ARP,0.83,0.05,26
+Shortcut-free 39,Std,0.78,0.08,27
+Shortcut-free 39,Radius,0.67,0.04,28
+Shortcut-free 39,IPv,0.2,0.04,29
+Shortcut-free 39,DNS,0.1,0.01,30
+Shortcut-free 39,HTTP,0.05,0.01,31
+Shortcut-free 39,SMTP,0.01,0.0,32
+Shortcut-free 39,SSH,0.01,0.0,32
+Shortcut-free 39,DHCP,0.0,0.0,36
+Shortcut-free 39,IGMP,0.0,0.0,36
+Shortcut-free 39,IRC,0.0,0.0,36
+Shortcut-free 39,Telnet,0.0,0.0,36
+Shortcut-free 39,cwr_flag_number,0.0,0.0,36
+Shortcut-free 39,ece_flag_number,0.0,0.0,36

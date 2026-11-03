@@ -1,0 +1,9 @@
+scenario,held_out,n_unseen_test_windows,alerted_as_known_attack_%,flagged_unknown_%,caught_total_%,missed_%,benign_flagged_unknown_%,known_attack_type_accuracy_%
+ARP spoofing,ARP_Spoofing,1744,45.01,34.63,78.38,21.62,10.9,75.66
+Reconnaissance (4),"Recon-OS_Scan, Recon-Ping_Sweep, Recon-Port_Scan, Recon-VulScan",10054,82.52,91.39,96.33,3.67,18.85,76.9
+MQTT attacks (5),"MQTT-DDoS-Connect_Flood, MQTT-DDoS-Publish_Flood, MQTT-DoS-Connect_Flood, MQTT-DoS-Publish_Flood, MQTT-Malformed_Data",19878,34.26,85.69,86.68,13.32,5.95,73.51
+MQTT malformed data,MQTT-Malformed_Data,1747,31.6,30.97,51.75,48.25,9.6,74.65
+ICMP floods (DoS+DDoS),"DDoS-ICMP, DoS-ICMP",10000,0.35,99.97,99.97,0.03,7.1,75.67
+SYN floods (DoS+DDoS),"DDoS-SYN, DoS-SYN",10000,99.85,72.63,99.99,0.01,7.95,73.48
+UDP floods (DoS+DDoS),"DDoS-UDP, DoS-UDP",10000,0.26,100.0,100.0,0.0,7.35,76.39
+TCP floods (DoS+DDoS),"DDoS-TCP, DoS-TCP",10000,98.8,99.99,99.99,0.01,7.65,75.58

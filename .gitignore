@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Full model (209 MB) is larger than GitHub's 100 MB file limit; Tiny is optional
+models/*.json
+models/tiny/
+# Keep the Lite model and the demo stream so the dashboard runs out of the box
+!models/lite/
+!models/lite/*.json
+!data/demo_stream.parquet
+
+# Generated outputs
+reports/
+models/lab/
+
+# Large research output (126 MB), re-created by notebooks/v10a_identifiability.py
+data/probs_seed42.npz
+
+# Private working files (paper drafts, snapshots, internal notes, editor settings)
+paper/
+releases/
+_backup_*/
+.agents/
+.claude/
+RESEARCH_LOG_CICIoMT2024.md
+_github_upload/

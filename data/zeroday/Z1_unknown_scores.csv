@@ -1,0 +1,49 @@
+scenario,score,AUROC_%,unknown_recall_%,known_test_false_unknown_%,benign_false_unknown_%
+ARP spoofing,MSP,61.38,18.81,5.27,4.4
+ARP spoofing,Energy,67.06,43.29,5.6,15.2
+ARP spoofing,kNN distance,85.86,14.74,4.04,16.35
+ARP spoofing,IsolationForest,91.91,67.72,2.34,13.25
+ARP spoofing,kNN + Energy,82.49,34.63,4.57,10.9
+ARP spoofing,kNN distance (with IAT),85.9,14.33,4.39,22.0
+Reconnaissance (4),MSP,75.16,27.73,5.75,2.9
+Reconnaissance (4),Energy,95.63,90.16,5.25,11.3
+Reconnaissance (4),kNN distance,95.58,77.51,4.13,18.15
+Reconnaissance (4),IsolationForest,81.66,5.19,5.0,13.6
+Reconnaissance (4),kNN + Energy,96.82,91.39,5.24,18.85
+Reconnaissance (4),kNN distance (with IAT),96.2,79.17,4.39,23.7
+MQTT attacks (5),MSP,73.24,27.03,6.17,6.15
+MQTT attacks (5),Energy,95.57,91.58,5.41,6.65
+MQTT attacks (5),kNN distance,96.23,70.83,4.72,12.05
+MQTT attacks (5),IsolationForest,91.91,11.37,3.16,13.05
+MQTT attacks (5),kNN + Energy,96.44,85.69,4.74,5.95
+MQTT attacks (5),kNN distance (with IAT),96.06,67.31,4.73,13.55
+MQTT malformed data,MSP,73.27,23.53,6.2,6.8
+MQTT malformed data,Energy,76.62,36.81,5.31,7.6
+MQTT malformed data,kNN distance,84.8,32.86,4.19,13.95
+MQTT malformed data,IsolationForest,85.24,34.12,3.35,12.55
+MQTT malformed data,kNN + Energy,82.0,30.97,4.84,9.6
+MQTT malformed data,kNN distance (with IAT),85.2,42.7,4.47,19.1
+ICMP floods (DoS+DDoS),MSP,91.2,36.02,6.63,7.55
+ICMP floods (DoS+DDoS),Energy,99.95,99.75,5.75,7.55
+ICMP floods (DoS+DDoS),kNN distance,99.52,99.97,4.4,12.3
+ICMP floods (DoS+DDoS),IsolationForest,86.35,0.6,3.41,12.55
+ICMP floods (DoS+DDoS),kNN + Energy,99.96,99.97,4.62,7.1
+ICMP floods (DoS+DDoS),kNN distance (with IAT),99.52,99.99,4.73,17.2
+SYN floods (DoS+DDoS),MSP,69.85,20.81,6.9,8.75
+SYN floods (DoS+DDoS),Energy,92.35,78.22,5.91,8.25
+SYN floods (DoS+DDoS),kNN distance,92.52,20.03,4.46,12.45
+SYN floods (DoS+DDoS),IsolationForest,64.17,0.02,3.59,12.5
+SYN floods (DoS+DDoS),kNN + Energy,95.49,72.63,4.81,7.95
+SYN floods (DoS+DDoS),kNN distance (with IAT),92.72,16.94,4.74,17.15
+UDP floods (DoS+DDoS),MSP,99.49,99.22,6.62,8.35
+UDP floods (DoS+DDoS),Energy,99.99,99.98,5.84,6.6
+UDP floods (DoS+DDoS),kNN distance,98.98,99.98,4.7,12.95
+UDP floods (DoS+DDoS),IsolationForest,87.78,0.3,3.78,12.4
+UDP floods (DoS+DDoS),kNN + Energy,99.99,100.0,4.93,7.35
+UDP floods (DoS+DDoS),kNN distance (with IAT),99.03,99.99,4.96,17.35
+TCP floods (DoS+DDoS),MSP,97.37,87.98,6.0,9.15
+TCP floods (DoS+DDoS),Energy,100.0,99.99,6.19,7.65
+TCP floods (DoS+DDoS),kNN distance,97.75,99.96,4.61,12.6
+TCP floods (DoS+DDoS),IsolationForest,10.88,0.0,2.9,12.15
+TCP floods (DoS+DDoS),kNN + Energy,99.99,99.99,4.96,7.65
+TCP floods (DoS+DDoS),kNN distance (with IAT),97.44,99.97,4.82,17.55

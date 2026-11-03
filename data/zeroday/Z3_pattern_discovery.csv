@@ -1,0 +1,9 @@
+scenario,true_k,n_clustered,chosen_k,purity_%,ARI
+ARP spoofing,1,1367,2,100.0,
+Reconnaissance (4),4,9685,2,51.533,0.002
+MQTT attacks (5),5,17231,2,53.044,0.338
+MQTT malformed data,1,904,5,100.0,
+ICMP floods (DoS+DDoS),2,9997,2,50.025,0.0
+SYN floods (DoS+DDoS),2,9999,2,58.356,0.028
+UDP floods (DoS+DDoS),2,10000,2,50.01,0.0
+TCP floods (DoS+DDoS),2,9999,3,54.775,0.008
