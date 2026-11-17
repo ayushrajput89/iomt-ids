@@ -148,7 +148,7 @@ Canadian Institute for Cybersecurity and have their own terms of use.
 
 ## Paper
 
-R. Amin, A. Rajput and N. Jain, "Revisiting Intrusion Detection on CICIoMT2024: Timestamp Leakage and
+A. Rajput, N. Jain and R. Amin, "Revisiting Intrusion Detection on CICIoMT2024: Timestamp Leakage and
 Context-Aware Detection," manuscript in preparation, 2026.
 
 If you use this code, please cite the paper (see `CITATION.cff`).
